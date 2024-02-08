@@ -163,6 +163,4 @@ docfile/*
 
 ml_env/
 
-.artifacts
-
 artifacts/*
