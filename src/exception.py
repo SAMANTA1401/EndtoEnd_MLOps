@@ -1,5 +1,5 @@
 import sys
-import logger
+from src import logger
 
 def error_message_detail(error,error_detail:sys): ##error details basically present inside the sys
     _,_,exc_tb=error_detail.exc_info()     # esecution info give three important information last info esc_tb
