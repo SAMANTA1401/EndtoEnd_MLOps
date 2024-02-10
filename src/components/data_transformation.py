@@ -113,7 +113,7 @@ class DataTransformation:
             ]
             test_arr = np.c_[input_feature_test_arr,np.array(target_feature_test_df)]
 
-            logging.info(f"Saved preprocessing onbject. ")
+            logging.info(f"Saved preprocessing object. ")
 
             save_object(  ## funciton present inside the utils.py
                 file_path=self.data_transformation_config.preprocessor_obj_file_path,
@@ -123,7 +123,7 @@ class DataTransformation:
             return (
                 train_arr,
                 test_arr,
-                self.data_transformation_config.preprocessor_obj_file_path,
+                # self.data_transformation_config.preprocessor_obj_file_path,
             )
         except Exception as e:
             raise logging.info(CustomException(e,sys))
