@@ -1,3 +1,5 @@
+# it is a clone of app.py file for deployment purpose
+
 ## it is use for flask web app
 from flask import Flask ,request,render_template, url_for, redirect
 import numpy as np
@@ -49,4 +51,4 @@ def predict_datapoint():
 
 
 if __name__=='__main__':
-    app.run(host="0.0.0.0",debug=True)
+    app.run(host="0.0.0.0") # remove debug =true for deployment
